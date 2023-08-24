@@ -34,20 +34,20 @@ const DashBoard = () => {
     <Box sx={{ margin: '1rem', color: 'black' }}>
       <Grid container rowSpacing={3}>
         <Grid item xs={12}>
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center',gap:'.5rem' }}>
             <form style={{ marginBottom: '1rem' }}>
               <button type="submit">Search </button>
               <input type="search" placeholder="Search Patients..." />
             </form>
-            <ColorButton variant="contained" style={{ marginBottom: '1rem' }}>Make an Appointment</ColorButton>
-            <ColorButton style={{ marginBottom: '1rem' }}>Add Patient</ColorButton>
+            <ColorButton variant="contained" style={{ marginBottom: '1rem' ,flex:'auto'}}>Make an Appointment</ColorButton>
+            <ColorButton style={{ marginBottom: '1rem',flex:'auto' }}>Add Patient</ColorButton>
             <Box sx={{ width: '2.4rem', height: '2.4rem', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#5a048f', border: 'none', color: 'white', marginBottom: '1rem' }}><NotificationsIcon /></Box>
           </Box>
         </Grid>
         <Grid item xs={12}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', alignContent: 'center' }}>
-            <Typography variant='h5' fontWeight={'bold'} mb={2}>Billing Overview</Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', backgroundColor: '#b9e0ed', padding: '.3rem', borderRadius: '10px' }}>
+            <Typography variant='h5' flex={4} fontWeight={'bold'} mb={2}>Billing Overview</Typography>
+            <Box  sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', backgroundColor: '#b9e0ed', padding: '.3rem', borderRadius: '10px',flex:{sm:'3',md:'1',xs:'auto'} }}>
               <Typography variant='span' sx={{ backgroundColor: '#5a048f', color: 'white', width: '2rem', height: '2rem', borderRadius: '10px' }}><KeyboardArrowLeftIcon sx={{ fontSize: '30px' }} /></Typography>
               <Typography>February 2021</Typography>
               <Typography variant='span' sx={{ backgroundColor: '#5a048f', color: 'white', width: '2rem', height: '2rem', borderRadius: '10px' }}><KeyboardArrowRightIcon sx={{ fontSize: '30px' }} /></Typography>
